@@ -14,9 +14,11 @@ class Hangman():
 		self.list_of_guesses = []
 
 	def check_guess(self,guess):
-		'''Method that takes an input single-letter guess
-		checks it against conditions.
-		'''
+		'''Method takes a cleaned guess as imput and
+		checks its presence in the randomly chosen hidden
+		word. The variables are brought up-to-date, and necessary
+		outputs printed.'''
+
 		guess = guess.lower()
 		if guess in self.word:
 			print(f'Good guess! \'{guess}\' is in the word.')
@@ -32,7 +34,12 @@ class Hangman():
 
 	def ask_for_input(self):
 		'''
-		Method asks for user input and 
+		Method asks user for string input then checks these against
+		certain criteria (single letter).
+		
+		Previous guesses are checked to prevent duplication, the
+		list_of_guesses  updated, and finally the guess is passed
+		to the check_guess() method to see if it's a match. 
 		'''
 		init = True
 		while init == True:
