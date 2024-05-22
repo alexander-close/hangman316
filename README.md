@@ -3,5 +3,12 @@ Hangman is a classic game in which a player thinks of a word and the other playe
 
 This is an implementation of the Hangman game, where the computer thinks of a word and the user tries to guess it. 
 
-So far we have the file milestone_2.py, which prompts the user for a 
-single letter to guess to a randomly selected fruit, and checks the input.
+Contents so far:
+
+- milestone_2.py, which prompts the 
+user for a single letter to guess to a randomly selected fruit, and checks 
+the input.
+- milestone_3.py, contains two functions that 1) takes in an input 
+guess and checks it against requirements 2) checks whether the letter is 
+in the word (not in this file but presumably the 'word' defined in 
+milestone_2.py).
