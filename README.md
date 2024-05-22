@@ -12,3 +12,5 @@ the input.
 guess and checks it against requirements 2) checks whether the letter is 
 in the word (not in this file but presumably the 'word' defined in 
 milestone_2.py).
+- milestone_4 contains a class of hangman objects with methods similar to 
+the functions in the above files built into it.
